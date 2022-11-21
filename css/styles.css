@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+}
+
+.main {
+	min-height: 100%;
+	background: linear-gradient(#3a83cf, #005);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculator {
+	padding: 30px;
+	background: linear-gradient(#ddd, #eee);
+	border: 1px solid #000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.screen {
+	text-align: right;
+	min-height: 100px;
+	background: #585651;
+	padding: 20px;
+	border: 1px solid #000;
+	letter-spacing: 0.16rem;
+	position: relative;
+}
+
+.screen-on {
+	background: #ff9e00;
+	box-shadow: inset 0 0 20px #ffdf05;
+}
+
+.calculated {
+	font-size: 0.8rem;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.current {
+	font-size: 1.9rem;
+	position: absolute;
+	top: 2.5rem;
+	right: 1rem;
+}
+
+.btns-all {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 1px;
+}
+
+.btn {
+	width: 70px;
+	height: 70px;
+	font-weight: 800;
+	border: none;
+	transition: all 0.2s ease;
+}
+
+.btn.num {
+	background: #667;
+	color: #eee;
+}
+
+.btn.operator,
+.equals,
+.plusminus {
+	background: #9aa;
+	color: #333;
+}
+
+.btn.power {
+	background: #649c1a;
+	color: #eee;
+}
+
+.btn.clear {
+	background: #ad221d;
+	color: #eee;
+}
+
+.btn.del {
+	background: #1a5d9c;
+	color: #eee;
+}
+
+.btn.num:hover {
+	background: #556;
+	color: #eee;
+}
+
+.btn.operator:hover,
+.equals:hover,
+.plusminus:hover {
+	background: rgb(130, 141, 145);
+}
+
+.btn.power:hover {
+	background: #287914;
+}
+
+.btn.clear:hover {
+	background: #81181d;
+}
+
+.btn.del:hover {
+	background: #133c72;
+}
+
+footer {
+	margin-top: 30px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+footer a {
+	color: #666;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+footer a:hover {
+	color: #866;
+}
+
+footer p {
+	display: inline;
+}
+
+.super {
+	vertical-align: super;
+}
